@@ -1,4 +1,4 @@
-# HTML-CSS-JAVASCRIPT-WEB
+# [PART1] HTML-CSS-JAVASCRIPT-WEB
 This is a simple adopt-cat project using HTML ; CSS ; and javascript with a CSS Reset already apply.
 
 To start working on this project:
@@ -9,4 +9,4 @@ From now, you can test your project from the command line.
 
 Dependencies References:
 - https://www.npmjs.com/package/live-server
-- https://github.com/necolas/normalize.css
+- https://github.com/krshoss/gardevoir
