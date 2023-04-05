@@ -18,7 +18,28 @@
         <h1>Formulaire d'adoption 😸</h1>
         <section id="form-view">
             <form action="adopt.html" method="post">
-                <!-- IMPLEMENTER VOTRE FORM ICI-->
+                <fieldset>
+                    <legend>Vos informations personnelles</legend>
+                    <table>
+                        <tr>
+                            <td><label for="nom">Nom:</label></td>
+                            <td><input type="text" name="nom" id="nom" placeholder="Doe"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="prenom">Prénom:</label></td>
+                            <td><input type="text" name="prenom" id="prenom" placeholder="John"></td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <fieldset>
+                    <legend>Votre RDV</legend>
+                    <table>
+                        <tr>
+                            <td><label for="date-reservation">Date de réservation:</label></td>
+                            <td><input type="datetime-local" name="date-reservation" id="date-reservation"></td>
+                        </tr>
+                    </table>
+                </fieldset>
                 <div>
                     <input type="submit" value="&check; Valider votre RDV">
                     <a href="index.html">&cross; Revenir à l'index</a>    
