@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/favicon.ico" sizes="any">
     <title>Adopt a cat :: Formulaire de test</title>
-    <link rel="stylesheet" href="../node_modules/gardevoir/dist/index.css">
+    <!-- <link rel="stylesheet" href="../node_modules/gardevoir/dist/index.css"> -->
+    <link rel="stylesheet" href="../node_modules/the-new-css-reset/css/reset.css">
+    <!-- <link rel="preload" as="stylesheet" href="../node_modules/gardevoir/dist/index.css"> -->
+    <!-- <link rel="preload" as="stylesheet" href="../node_modules/the-new-css-reset/css/reset.css"> -->
 </head>
 <body>
     <form action="submit">
@@ -50,25 +53,33 @@
             <legend>Mon choix mono-valeur/multi-valeurs</legend>
             <label for="pets">Animal mono:</label>
             <select name="pets" id="pets">
-                <option value="">--Please choose an option--</option>
-                <option value="dog">Dog</option>
-                <option value="cat">Cat</option>
-                <option value="hamster">Hamster</option>
-                <option value="parrot">Parrot</option>
-                <option value="spider">Spider</option>
-                <option value="goldfish">Goldfish</option>
+                <option value="" disabled selected hidden>--Please choose an option--</option>
+                <optgroup label="1-3">
+                    <option value="dog">Dog</option>
+                    <option value="cat" disabled>Cat</option>
+                    <option value="hamster">Hamster</option>
+                </optgroup>
+                <optgroup label="4-6">
+                    <option value="parrot">Parrot</option>
+                    <option value="spider">Spider</option>
+                    <option value="goldfish">Goldfish</option>
+                </optgroup>
             </select>
             <br>
             <br>
             <label for="pets">Animal multi:</label>
             <select name="pets" id="pets" multiple size="4">
-                <option value="">--Please choose an option--</option>
-                <option value="dog">Dog</option>
-                <option value="cat">Cat</option>
-                <option value="hamster">Hamster</option>
-                <option value="parrot">Parrot</option>
-                <option value="spider">Spider</option>
-                <option value="goldfish">Goldfish</option>
+                <option value="" disabled selected hidden>--Please choose an option--</option>
+                <optgroup label="1-3">
+                    <option value="dog">Dog</option>
+                    <option value="cat" disabled>Cat</option>
+                    <option value="hamster">Hamster</option>
+                </optgroup>
+                <optgroup label="4-6">
+                    <option value="parrot">Parrot</option>
+                    <option value="spider">Spider</option>
+                    <option value="goldfish">Goldfish</option>
+                </optgroup>
             </select>
         </fieldset>
         <fieldset>
