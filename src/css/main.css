@@ -1,5 +1,11 @@
 html {
     box-sizing: border-box;
+    /*
+    --mq-lg: 1200px;
+    --mq-md: 800px;
+    --mq-sm: 480px;
+    --mq-xs: 320px;
+    */
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -7,6 +13,12 @@ html {
 
 :root {
     --real-vw: calc(100vw - (100vw - 100%));
+    /*
+    --mq-lg: 1200px;
+    --mq-md: 800px;
+    --mq-sm: 480px;
+    --mq-xs: 320px;
+    */
 }
 
 body {
@@ -289,6 +301,4 @@ main>section#form-view a:first-of-type:hover {
     background-color: rgba(0, 238, 255, 0.4);
 }
 
-
 /*-----------------------END FORM-------------------------*/
-        
