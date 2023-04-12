@@ -3,10 +3,42 @@
 }
 
 /*---------------------BEGIN INDEX------------------------*/
+main>section#index-js {
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: space-around;
+}
+
+main>section#index-js>div {
+    width: 40%;
+    min-height: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px dashed firebrick;
+    padding: 10px;
+}
+
+main>section#index-js button {
+    font-size: 1em;
+    display:block;
+    height: 30px;
+    margin: 0 auto;
+    cursor: grab;
+}
+
 main>section#index-view {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+main dialog {
+    width: 50%;
+    min-height: 200px;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.8);
+    text-align: center;
+    /* border-radius: 8px; */
 }
 
 main>section#index-view>div.item {

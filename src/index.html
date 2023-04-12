@@ -20,6 +20,39 @@
     </header>
     <main>
         <h1>L'application pour adopter un chat 😸</h1>
+        <dialog id="dia1">
+            <p>This is an open dialog window.</p>
+            <br>
+            <button onclick="document.getElementById('dia1').close();">Close Me!</button>
+        </dialog>
+        <section id="index-js">
+            <div dropzone="move" data-comment-dropzone="link|copy"
+                ondrop="drop(event)" ondragover="event.preventDefault()"
+            >
+                <button id="drable1" draggable="true"
+                    ondragstart="event.dataTransfer.setData('the_id', event.target.id)"
+                    onclick="document.getElementById('dia1').showModal();"
+                >🧪 Click me to open an HTML modal dialog</button>
+            </div>
+            <div class="box"
+                ondrop="drop(event)"
+                ondragover="event.preventDefault()"
+            >
+                <!-- dropzone -->
+            </div>
+            <script>
+<!--
+function drop(ev) {
+ev.preventDefault();
+var d = ev.dataTransfer.getData("the_id");
+ev.target.appendChild(document.getElementById(d));
+//var el = document.getElementById(d);
+//el.disabled = !el.disabled;
+//  el.setAttribute('draggable', false);
+}
+//-->
+            </script>
+        </section>
         <section id="index-view">
             <div class="item">
                 <a href="form.html" title="Clic pour l'adopter">
