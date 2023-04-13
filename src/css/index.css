@@ -89,32 +89,16 @@ main>section#index-view>div.item>a:hover {
 
 
 @media screen and (min-width: 800px) and (max-width: 1200px) {
-    header h1 {
-        font-size: 1.27em;
-    }
-
     main>section#index-view>div.item {
         width: calc((var(--real-vw) * .33) - 10px);
     }
 }
 @media screen and (min-width: 481px) and (max-width: 800px) {
-    header h1 {
-        font-size: 0.8em;
-    }
-
     main>section#index-view>div.item {
         width: calc((var(--real-vw) * .5) - 10px);
     }
 }
 @media screen and (max-width: 480px) {
-    header h1 {
-        font-size: 1.3em;
-        width: 6.5em;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
     main>section#index-view>div.item {
         width: calc(var(--real-vw) - 10px);
     }
