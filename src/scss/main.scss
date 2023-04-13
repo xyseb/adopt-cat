@@ -1,0 +1,56 @@
+/**
+* @TODO: Il suffit juste de Convertir ce CSS en SCSS pour cette 3eme partie du TP
+*/
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+:root {
+    --real-vw: calc(100vw - (100vw - 100%));
+}
+
+body {
+}
+
+header {
+    font-size: 1.3em;
+    background-color: midnightblue;
+    width: var(--real-vw);
+    height: 80px;
+    position: sticky;
+    top: 0;
+    padding: 0 10px;
+}
+
+header svg {
+    height: 50px;
+    margin: 15px 0;
+    float: left;
+}
+header svg>g>path {
+    color:blueviolet;
+    fill: orange;
+}
+
+header h1 {
+    color: orange;
+    line-height: 80px;
+    margin: 0;
+    float: right;
+}
+
+main {
+    background: url('../../img/background.png') no-repeat center fixed;
+    background-size: cover;
+    background-position-y: 80px;
+    min-height: calc(100vh - 80px);
+}
+main>h1 {
+    margin-top: 0;
+    padding-top: 15px;
+    text-align: center;
+}
