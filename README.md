@@ -10,6 +10,8 @@ From now, you can test your project from the command line.
 Dependencies References:
 - https://www.npmjs.com/package/live-server
 - https://github.com/krshoss/gardevoir
+- https://www.npmjs.com/package/concurrently
+- https://www.npmjs.com/package/sass
 
 Usefull links:
 - https://www.toptal.com/designers/htmlarrows/symbols/
