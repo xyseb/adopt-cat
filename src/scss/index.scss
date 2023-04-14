@@ -1,0 +1,138 @@
+/*---------------------BEGIN INDEX------------------------*/
+$real-vw: calc(100vw - (100vw - 100%));
+
+main dialog {
+    width: 50%;
+    min-height: 200px;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.8);
+    text-align: center;
+}
+
+main>section {
+    &#index-js {
+        display: flex;
+        margin-bottom: 30px;
+        justify-content: space-around;
+
+        >div {
+                width: 40%;
+                min-height: 50px;
+                flex-direction: row;
+                flex-wrap: wrap;
+                border: 1px dashed firebrick;
+                padding: 10px;
+        }
+
+        button {
+            font-size: 1em;
+            display:block;
+            height: 30px;
+            margin: 0 auto;
+            cursor: grab;
+        }
+    }
+
+    &#index-view {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;        
+
+        div.item {
+            width: calc(($real-vw * .25) - 20px);
+            max-width: 480px;
+            margin: 0 0 20px 0;
+            border: 1px solid black;
+            border-radius: 8px;
+            background-color: rgba(255,255,255,0.4);
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            
+            a {
+                text-decoration: none;
+                color:black; 
+                display: grid;
+                grid-template-columns: 85px calc(100% - (85px - 5px));
+                grid-template-areas: "photo details";
+                
+                &:hover {
+                    background-color: rgba(0, 238, 255, 0.4);                
+                }
+
+                .photo {
+                    grid-area: photo;
+
+                    &#img1,
+                    &#img2,
+                    &#img3,
+                    &#img4,
+                    &#img5,
+                    &#img6,
+                    &#img7,
+                    &#img8,
+                    &#img9,
+                    &#img10,
+                    &#img11,
+                    &#img12,
+                    &#img13,
+                    &#img14 {
+                        width: 85px;
+                        height: 85px;
+                    }
+                    
+                    &#img1 { background: url('../img/chat1.png') center / 90% no-repeat; }
+                    &#img2 { background: url('../img/chat2.png') center / 90% no-repeat; }
+                    &#img3 { background: url('../img/chat3.png') center / 90% no-repeat; }
+                    &#img4 { background: url('../img/chat4.png') center / 90% no-repeat; }
+                    &#img5 { background: url('../img/chat5.png') center / 90% no-repeat; }
+                    &#img6 { background: url('../img/chat6.png') center / 90% no-repeat; }
+                    &#img7 { background: url('../img/chat7.png') center / 90% no-repeat; }
+                    &#img8 { background: url('../img/chat8.png') center / 90% no-repeat; }
+                    &#img9 { background: url('../img/chat9.png') center / 90% no-repeat; }
+                    &#img10 { background: url('../img/chat10.png') center / 90% no-repeat; }
+                    &#img11 { background: url('../img/chat11.png') center / 90% no-repeat; }
+                    &#img12 { background: url('../img/chat12.png') center / 90% no-repeat; }
+                    &#img13 { background: url('../img/chat13.png') center / 90% no-repeat; }
+                    &#img14 { background: url('../img/chat14.png') center / 90% no-repeat; }    
+                }
+
+                .details {
+                    grid-area: details;
+                    align-self: center;
+                    margin: 0 0 0 5px;
+        
+                    h3 {
+                        margin: 5px 0;
+        
+                        span {
+                            font-weight: normal;
+                        }
+                    }
+        
+                    p {
+                        margin: 5px 0;
+        
+                        span {
+                            font-weight: bold;
+                        }
+                    }
+                }
+        
+
+
+            }
+
+            @media screen and (min-width: 800px) and (max-width: 1200px) {
+                width: calc(($real-vw * .33) - 10px);
+            }
+
+            @media screen and (min-width: 481px) and (max-width: 800px) {
+                width: calc(($real-vw * .5) - 10px);
+            }
+
+            @media screen and (max-width: 480px) {
+                width: calc($real-vw - 10px);
+            }
+        }
+    }
+}
+/*----------------------END INDEX-------------------------*/
