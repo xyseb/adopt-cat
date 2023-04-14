@@ -1,12 +1,39 @@
 /*---------------------BEGIN INDEX------------------------*/
 $real-vw: calc(100vw - (100vw - 100%));
 
+main div#magic-cat {
+    position: fixed;
+    bottom: -200px;
+    left:0;
+    background: url('../../img/magic-cat.png') center / contain no-repeat;
+    width: 200px;
+    height: 200px;
+    transition: 500ms ease-in-out;
+}
+
 main dialog {
     width: 50%;
     min-height: 200px;
     padding: 20px;
     background-color: rgba(255,255,255,0.8);
     text-align: center;
+
+    p.legend {
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        color: dimgrey;
+
+        kbd {
+            border: 1px solid black;
+            border-radius: 5px;
+            background-color: dim;
+            color: orange;
+            padding: 3px;
+        }
+    }
 }
 
 main>section {

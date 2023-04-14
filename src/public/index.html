@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.ico" sizes="any">
     <title>Adopt a cat :: index</title>
     <link rel="stylesheet" href="../../node_modules/gardevoir/dist/index.css">
     <link rel="stylesheet" href="dist/css/main.css">
     <link rel="stylesheet" href="dist/css/index.css">
 </head>
-<body>
+<body onload="document.body.addEventListener('click', displayMagicCat, true);">
     <header>
         <svg width="76" height="90" version="1.1" viewBox="0 0 76 90" xmlns="http://www.w3.org/2000/svg">
             <g transform="translate(-267.71 -407.36)">
@@ -20,10 +21,12 @@
     </header>
     <main>
         <h1>L'application pour adopter un chat 😸</h1>
+        <div id="magic-cat"></div>
         <dialog id="dia1">
             <p>This is an open dialog window.</p>
             <br>
             <button onclick="document.getElementById('dia1').close();">Close Me!</button>
+            <p class="legend"><kbd>Ctrl</kbd> + <kbd>Win</kbd> + <kbd>Echap</kbd> pour fermer la fenêtre.</p>
         </dialog>
         <section id="index-js">
             <div dropzone="move" data-comment-dropzone="link|copy"
@@ -198,5 +201,6 @@ ev.target.appendChild(document.getElementById(d));
     </main>
 
     <script src="js/main.js" defer></script>
+    <script src="dist/js/main.js" defer></script>
 </body>
 </html>
